@@ -1,8 +1,6 @@
 function CheckNums(pre1, pre2) {
-    var num1 = pre1;
-    var num2 = pre2;
-    var num3 = num1 < num2;
-    if (num1 == num2) {
+    var num3 = pre1 < pre2;
+    if (pre1 == pre2) {
         num4 = '-1';
     } else {
         num4 = num3;
@@ -18,11 +16,10 @@ function TimeConvert(num) {
     return together
 }
 function AlphabetSoup(str) {
-    var str1 = str;
-    var str2 = str1.split('')
-    var str3 = str2.sort();
-    var str4 = str3.join('');
-    return str4;
+    var str1 = str.split('')
+    var str2 = str1.sort();
+    var str3 = str2.join('');
+    return str3;
 }
 function input1() {
     var num0 = document.getElementById('one').value;
